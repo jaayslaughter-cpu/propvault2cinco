@@ -1,0 +1,4 @@
+cd mobile
+npm install --legacy-peer-deps
+
+eas build --profile preview --platform ios
