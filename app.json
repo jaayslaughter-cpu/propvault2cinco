@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Prop Vault",
+    "slug": "prop-vault-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "propvault",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": { "backgroundColor": "#0e1117" },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.propvault.mobile",
+      "infoPlist": {
+        "UIBackgroundModes": ["fetch", "remote-notification"]
+      }
+    },
+    "android": {
+      "package": "com.propvault.mobile",
+      "adaptiveIcon": { "backgroundColor": "#0e1117" },
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "sounds": []
+        }
+      ]
+    ]
+  }
+}
